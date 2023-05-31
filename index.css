@@ -1,0 +1,50 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e5e5f7;
+    opacity: 1;
+    background: repeating-linear-gradient(45deg, #444cf7, #444cf7 2.5px, #e5e5f7 2.5px, #e5e5f7 12.5px);
+}
+
+/* Estilos del contenedor */
+main {
+    max-width: 240px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    background-color: #fff;
+}
+
+/* Estilos de las etiquetas */
+label {
+    font-weight: bold;
+}
+
+/* Estilos de los campos de entrada */
+input[type="number"],
+input[type="radio"] {
+    margin-bottom: 10px;
+}
+
+input[type="submit"] {
+    background-color: #4CAF50;
+    /* Color de fondo */
+    color: white;
+    /* Color del texto */
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+/* Estilos para hacer el formulario responsivo */
+@media (min-width: 300px) {
+    main {
+        padding: 20px;
+    }
+
+    input[type="text"] {
+        width: 80%;
+    }
+}

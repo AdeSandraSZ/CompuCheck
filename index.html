@@ -1,15 +1,46 @@
 <!DOCTYPE html>
 <html>
-    <header>
-        
-    </header>
+<header>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Check</title>
+    <link rel="stylesheet" href="index.css">
+</header>
 
-    <body>
-        <h1 id="hi">Hola mundo</h1>
+<body>
+    <main>
+        <form action="" class="formulario" id="registro">
+            <label for="" id="nControl">Numero de control:</label><br>
+            <input type="number" id="ncontrol" placeholder="Escribe tu no. de control" minlength="7" maxlength="8"
+                required pattern="[0-9]+" /></p>
 
-        <button id="btn">Click me</button>
+            <label for="" id="mouse">Mouse:</label><br>
+            <input type="radio" name="raton" value="si" required> Si
+            <input type="radio" name="raton" value="no" required> No </p>
 
-        <script src="index.js"></script>
-    </body>
+            <label for="" id="teclado">Teclado:</label><br>
+            <input type="radio" name="teclado" value="si" required> Si
+            <input type="radio" name="teclado" value="no" required> No </p>
+
+            <label for="" id="gabinete">Gabinete:</label><br>
+            <input type="radio" name="cpu" value="si" required> Si
+            <input type="radio" name="cpu" value="no" required> No </p>
+
+            <label for="" id="red">Cable de red:</label><br>
+            <input type="radio" name="cable" value="si" required> Si
+            <input type="radio" name="cable" value="no" required> No </p>
+
+            <label>Comentario (Opcional):</label>
+            <input type="text" id="comentario" placeholder="Escribe tu comentario"></p>
+
+            <input type="submit" value="Listo" onclick="procesarFormulario(event)"></p>
+
+            <div id="cargando" style="display: none;"> Cargando... </div>
+
+            <script src="index.js"></script>
+        </form>
+    </main>
+</body>
 
 </html>
